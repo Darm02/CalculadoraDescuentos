@@ -3,9 +3,30 @@
 }
 
 .contenedor {
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    gap: 10px;
+}
+
+.precios{
+    gap: 5px;
+}
+
+#formulario-descuentos {
+    display: grid;
+    grid-template-areas: "form botones";
+    grid-template-rows: 1fr;
+    grid-template-columns: auto auto;
+}
+
+.seccion-form{
+    grid-area: form;
+}
+
+.seccion-boton{
+    grid-area: botones;
+    gap: 10px;
+    justify-content: start;
 }

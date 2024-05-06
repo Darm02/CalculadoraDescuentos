@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css" />
     <title>Calculadora de Descuentos</title>
 </head>
+
 <body>
     <h1>Calculadora de Descuentos</h1>
-    <div id="formulario-descuentos" method="post" action="#" class="contenedor">
-        <label>Ingresa el precio original</label>
-        <input id="precio" type="number" />
-        
-        <label>Ingresa descuento a aplicar</label>
-        <input id="descuento" type="number" />
 
-        <input id="calcular" type="submit" value="Calcular" />
+    <div id="formulario-descuentos" method="post" action="#">
+        <div class="seccion-form contenedor">
+            <div class="precios contenedor">
+                <label>Ingresa Precios</label>
+                <input class="precio" type="text" />
+            </div>
+            <p>Precio: <span id="suma"></span></p>
+            <label>Ingresa descuento a aplicar</label>
+            <input id="descuento" type="text" />
 
-        <input id="total" type="text" />
+            <input id="calcular" type="submit" value="Calcular" />
+
+            <input id="total" type="text" />
+        </div>
+        <div class="seccion-boton contenedor">
+            <button id="agregar-precio">Agregar precio</button>
+            
+        </div>
     </div>
 </body>
 
 <script src="./js/index.js"></script>
+
 </html>
