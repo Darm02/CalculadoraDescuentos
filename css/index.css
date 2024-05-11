@@ -1,5 +1,6 @@
 * {
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -43,14 +44,12 @@ body {
 
 /* Input styles */
 input[type="number"],
-input[type="text"],
-button {
-    padding: 12px 16px; /* Increase padding for inputs and buttons */
-    border: none;
+input[type="text"] {
+    padding: 12px 16px; /* Increase padding for inputs */
+    border: 2px solid #8a2be2; /* Purple border */
     border-radius: 4px;
-    background-color: #8a2be2; /* Purple */
-    color: #fff; /* White text */
-    cursor: pointer;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
     font-size: inherit; /* Inherit font size from parent (.contenedor) */
 }
 
@@ -61,7 +60,13 @@ input[type="text"] {
 }
 
 button {
-    width: auto;
+    padding: 12px 16px; /* Increase padding for buttons */
+    border: none;
+    border-radius: 4px;
+    background-color: #8a2be2; /* Purple background */
+    color: #fff; /* White text */
+    cursor: pointer;
+    font-size: inherit; /* Inherit font size from parent (.contenedor) */
 }
 
 /* Button hover effect */
