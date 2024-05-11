@@ -42,6 +42,7 @@ document.getElementById('calcular').addEventListener('click', function (event) {
 
     let totalHtml = document.getElementById('total');
 
-    totalHtml.value = (parseFloat(totalPrecios) - (parseFloat(totalPrecios) * (parseFloat(descuento) / 100))).toLocaleString("es-CL", { style: "currency", currency: "CLP" });
+    totalHtml.value = (parseFloat(totalPrecios) - (parseFloat(totalPrecios) * (parseFloat(descuento) / 100))).toLocaleString("es-CL", { style: "currency", currency: "CLP", minimumFractionDigits: 2,
+        maximumFractionDigits: 2 });
 });
 
