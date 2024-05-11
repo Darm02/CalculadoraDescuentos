@@ -21,15 +21,25 @@ body {
 
 .precios {
     gap: 5px;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    grid-area: h1;
+    padding-left: 15px;
 }
 
 #formulario-descuentos {
     display: grid;
-    grid-template-areas: "form botones";
-    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "h1 h1"
+    "form botones";
+    grid-template-rows: auto 1fr;
     grid-template-columns: auto auto;
-    max-width: 600px; /* Set a maximum width for the form */
-    margin: 0 auto; /* Center the form horizontally */
+    max-width: 615px;
+    margin: 0 auto;
+    gap: 15px;
 }
 
 .seccion-form {
@@ -67,6 +77,7 @@ button {
     color: #fff; /* White text */
     cursor: pointer;
     font-size: inherit; /* Inherit font size from parent (.contenedor) */
+    width: 100px;
 }
 
 /* Button hover effect */
