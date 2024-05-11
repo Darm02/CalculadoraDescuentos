@@ -11,10 +11,7 @@ function sumarPrecios() {
         }
     });
 
-    let valorFormateado = totalPrecios.toLocaleString('es-ES', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-    });
+    let valorFormateado = totalPrecios.toLocaleString("es-CL", { style: "currency", currency: "CLP" });
     let suma = document.getElementById('suma');
 
     suma.textContent = valorFormateado;
@@ -43,6 +40,6 @@ document.getElementById('calcular').addEventListener('click', function (event) {
 
     let totalHtml = document.getElementById('total');
 
-    totalHtml.value = parseFloat(totalPrecios) - (parseFloat(totalPrecios) * (parseFloat(descuento) / 100));
+    totalHtml.value = (parseFloat(totalPrecios) - (parseFloat(totalPrecios) * (parseFloat(descuento) / 100)))toLocaleString("es-CL", { style: "currency", currency: "CLP" });
 });
 
