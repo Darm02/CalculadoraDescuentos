@@ -11,7 +11,9 @@ function sumarPrecios() {
         }
     });
 
-    let valorFormateado = totalPrecios.toLocaleString("es-CL", { style: "currency", currency: "CLP" });
+    let valorFormateado = totalPrecios.toLocaleString("es-CL", { style: "currency", currency: "CLP", minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+     });
     let suma = document.getElementById('suma');
 
     suma.textContent = valorFormateado;
